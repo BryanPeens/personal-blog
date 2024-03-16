@@ -1,0 +1,88 @@
+.form {
+    flex: 1;
+    width: 100%;
+    max-width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease; /* Add transition for smoother resizing */
+    margin-bottom: 20px; /* Add margin at the bottom to prevent cut-off */
+    margin-right: 20px; /* Add margin at the right to separate from the image */
+}
+
+.form:hover{
+    background-color: red;
+    cursor: pointer;
+    background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0);
+    transition: background 2s ease-in, opacity 2s ease-out; /* Added a smooth transition for background and opacity, same as in style.css */
+    opacity: 0.5;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    text-align: center;
+    font-weight: bolder;
+    color: darkslategray;
+}
+
+.form input[type="text"],
+.form input[type="text"],
+.form textarea,
+.form button {
+    width: calc(100% - 20px); /* Adjusted width to accommodate padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    justify-content: center;
+}
+
+.form button {
+    width: calc(100% - 20px); /* Adjusted width to accommodate padding */
+    background-color: darkslategray;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+/* On screens that are 992px or less, adjust form padding */
+@media screen and (max-width: 992px) {
+    .form {
+        max-width: 98%;
+        padding: 32px;
+        margin-right: 0;
+        margin-top: 10px;
+        background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0);
+    }
+}
+
+/* On screens that are 600px or less, adjust form padding and width */
+@media screen and (max-width: 600px) {
+    .form {
+        max-width: 100%;
+        padding: 10px;
+        margin-right: 0;
+        margin-top: 30px;
+        background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0);
+    }
+
+    .form input[type="text"],
+    .form input[type="text"],
+    .form textarea,
+    .form button {
+        width: calc(100% - 16px); /* Adjusted width to accommodate padding */
+        margin-top: 5px;
+    }
+
+    .form button {
+        width: calc(100% - 16px); /* Adjusted width to accommodate padding */
+    }
+}

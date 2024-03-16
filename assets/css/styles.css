@@ -1,0 +1,200 @@
+/* Common styles for both files */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background-color: #d9dcd6; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main {
+    margin: auto;
+}
+
+header {
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: background 2s ease-in, opacity 2s ease-in; /* Added a smooth transition for background and opacity, same as in form.css */
+}
+header:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0);
+    opacity: 0.5;
+}
+
+header nav {
+    margin-left: 10px;
+    align-self: center;
+}
+
+header nav a {
+    margin-left: 20px;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-right: 20px;
+}
+
+header h1 .seo {
+    color: lightslategray;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Slider specific styles */
+/* Original source found here https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    top: 1.7px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 100%;
+    border: 1px solid black;
+    margin-top: 1px;
+}
+
+/* Hero Section Specific styles */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 88%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image {
+    flex: 1;
+    max-width: 100%;
+    margin-right: 20px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 100%;
+}
+/* .image p {
+    z-index: 5;
+    position: relative;
+    top: -90px;
+    left: 298px;
+    padding: 8px;
+    display: inline;
+    font-size: 24px;
+    color: white;
+} */
+
+@media (max-width: 768px) {
+    header{
+        background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0);
+    }
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image {
+        max-width: 90%;
+        align-self: center;
+        margin-right: 0;
+    }
+}

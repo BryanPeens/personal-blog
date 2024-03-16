@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <title>Personal Blog</title>
 </head>
 <body>
-    
+    <header>
+        <div>
+            <h1>A<span class="seo">DEVS</span>MIND</h1>
+        </div>
+        <nav>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="content">
+                    <div class="image">
+                        <img src="./assets/images/hero.jpg" alt="Little Man With Moon Head">
+                        <!-- <p>My First Blog</p> -->
+                    </div>
+                    <div class="form">
+                        <h2>What's on your mind?</h2>
+                        <form action="#">
+                            <input type="text" placeholder="Username" required/>
+                            <input type="text" placeholder="Title" required/>
+                            <textarea rows="8" placeholder="Content" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
 </body>
 </html>
