@@ -1,60 +1,59 @@
-/* Common styles for both files */
+/* Resetting default styles */
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
+/* Global styles */
 body {
-    /* background-color: #d9dcd6; */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-main {
-    margin: auto;
+    font-family: Arial, sans-serif; /* Setting a fallback font */
+    background-color: #f0f0f0; /* Setting a light background color */
 }
 
 header {
-    padding: 20px;
     position: sticky;
     top: 0;
     width: 100%;
+    background-color: #ffffff; /* Setting a white background color for the header */
+    padding: 10px 20px; /* Adding some padding for better spacing */
     display: flex;
-    justify-content: space-between;
-    transition: background 2s ease-in, opacity 2s ease-in; /* Added a smooth transition for background and opacity, same as in form.css */
+    justify-content: space-between; /* Aligning items with space between */
+    align-items: center; /* Aligning items vertically */
+    z-index: 1000; /* Ensuring the header is above other content */
+    transition: background 0.3s, opacity 0.3s; /* Shortening the transition duration */
 }
+
 header:hover {
     cursor: pointer;
     background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0);
-    opacity: 0.5;
-}
-
-header nav {
-    margin-left: 10px;
-    align-self: center;
-}
-
-header nav a {
-    margin-left: 20px;
-    align-items: center;
+    opacity: 0.8; /* Adjusting opacity on hover */
 }
 
 header h1 {
-    font-size: 35px;
-    margin-right: 20px;
+    font-size: 24px; /* Reducing the font size of the header title */
+    color: #333; /* Setting a darker color for better contrast */
 }
-
 header h1 .seo {
     color: lightslategray;
 }
 
-a {
-    color: #ffffff;
+header nav {
+    display: flex; /* Ensuring navigation links are displayed in a row */
+}
+
+header nav a {
+    margin-right: 20px; /* Adding some spacing between navigation links */
+    color: #333; /* Setting a darker color for better contrast */
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
+/* Slider specific styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
 /* Slider specific styles */
@@ -122,6 +121,14 @@ input:checked + .slider:before {
     border-radius: 100%;
     border: 1px solid black;
     margin-top: 1px;
+}
+
+/* First Section */
+.two-lines {
+    border-top: 2px solid #000; /* Setting a black color for the border */
+    border-bottom: 2px solid #000; /* Setting a black color for the border */
+    padding: 2px 0; /* Adding some vertical padding for better spacing */
+    margin-bottom: 20px;
 }
 
 /* Hero Section Specific styles */
