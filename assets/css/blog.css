@@ -52,10 +52,11 @@ header nav a {
     padding: 8px;
     border-radius: 10px;
     margin-right: 19px;
-    background-color: transparent;
+    background: transparent;
 }
 .back-button:hover{
     cursor: pointer;
+    background: linear-gradient(to left, #14ffe9, #ffeb3b, #ff00e0);
 }
 /* Slider specific styles */
 .switch {
