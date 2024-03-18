@@ -73,6 +73,9 @@
         margin-top: 30px;
         background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0);
     }
+    .form h2{
+        font-size: 20px;
+    }
 
     .form input[type="text"],
     .form input[type="text"],
@@ -80,6 +83,7 @@
     .form button {
         width: calc(100% - 16px); /* Adjusted width to accommodate padding */
         margin-top: 5px;
+        align-self: center;
     }
 
     .form button {

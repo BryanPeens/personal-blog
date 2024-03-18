@@ -47,7 +47,17 @@ header nav a {
     color: #333; /* Setting a darker color for better contrast */
     text-decoration: none;
 }
-
+/* Back button */
+.back-button{
+    padding: 8px;
+    border-radius: 10px;
+    margin-right: 19px;
+    background: transparent;
+}
+.back-button:hover{
+    cursor: pointer;
+    background: linear-gradient(to left, #14ffe9, #ffeb3b, #ff00e0);
+}
 /* Slider specific styles */
 .switch {
     position: relative;
@@ -78,7 +88,7 @@ header nav a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    /* background-color: #ccc; */
     -webkit-transition: .4s;
     transition: .4s;
 }
