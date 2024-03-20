@@ -1,41 +1,43 @@
 /* First Section */
+/* Styles for a div with class "two-lines" */
 .two-lines {
-    border-top: 2px solid #000; /* Setting a black color for the border */
-    border-bottom: 2px solid #000; /* Setting a black color for the border */
-    padding: 2px 0; /* Adding some vertical padding for better spacing */
-    margin-bottom: 20px;
+    border-top: 2px solid #000; /* Setting a black color for the top border */
+    border-bottom: 2px solid #000; /* Setting a black color for the bottom border */
+    padding: 2px 0; /* Adding 2 pixels of vertical padding and no horizontal padding */
+    margin-bottom: 20px; /* Adding a bottom margin of 20 pixels */
 }
 
-/* ================== Styles related to the post */
-.post-container{
-    border: 2px solid black;
-    height: 100%;
-    width: 98%;
-    margin: auto;
-    margin-top: 10px;
-    border-radius: 3px;
-    padding: 8px;
+/* Styles related to the blog post */
+.post-container {
+    border: 2px solid black; /* Setting a black border with 2px thickness */
+    height: 100%; 
+    width: 98%; /* Making the container's width 98% of its parent's width */
+    margin: auto; 
+    margin-top: 10px; 
+    border-radius: 3px; /* Adding a border radius of 3 pixels for rounded corners */
+    padding: 8px; /* Adding 8 pixels of padding inside the container */
 }
-.post-container h2{
-    border-bottom: 1px solid black;
-    width: 98%;
-    margin: auto;
-    padding-bottom: 3px;
+.post-container h2 {
+    border-bottom: 1px solid black; 
+    width: 98%; /* Making the width of h2 elements 98% of their parent's width */
+    margin: auto; /* Centering h2 elements horizontally */
+    padding-bottom: 3px; 
 }
-.post-container p{
-    width: 98%;
-    margin: auto;
-    margin-top: 4px;
-    padding: 10px;
+.post-container p {
+    width: 98%; /* Making the width of paragraphs 98% of their parent's width */
+    margin: auto; 
+    margin-top: 4px; 
+    padding: 10px; /* Adding 10 pixels of padding inside paragraphs */
 }
-.post-container h6{
-    width: 98%;
-    margin: auto;
-    margin-top: 4px;
+.post-container h6 {
+    width: 98%; /* Making the width of h6 elements 98% of their parent's width */
+    margin: auto; 
+    margin-top: 4px; /* Adding a top margin of 4 pixels */
 }
 
+/* Media query for screens with a maximum width of 768 pixels */
 @media (max-width: 768px) {
-    header{
-        background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0);
+    header {
+        background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0); /* Adding a linear gradient background for the header */
     }
 }

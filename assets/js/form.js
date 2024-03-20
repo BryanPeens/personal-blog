@@ -31,7 +31,7 @@ submitButton.addEventListener('click', function (event) {
   localStorage.setItem('postArray', JSON.stringify(blogposts));
 
 
-  location.href = "blog.html";
+  location.href = "blog.html"; // Go to next page
 
   // Clear the input fields
   usernameInput.value = '';

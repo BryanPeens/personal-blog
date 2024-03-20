@@ -11,8 +11,8 @@ body {
     background-color: #f0f0f0; /* Setting a light background color */
 }
 .dark{
-    background-color: black;
-    color: white;
+    background-color: black; /* Setting background color for dark mode */
+    color: white; /* Setting text color for dark mode */
 }
 .dark #line-div{
     border-color: white;
@@ -39,7 +39,7 @@ header {
 
 header:hover {
     cursor: pointer;
-    background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0);
+    background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0); /* Fun gradient colors*/
     opacity: 0.8; /* Adjusting opacity on hover */
 }
 
@@ -120,9 +120,7 @@ header nav a {
 }
 
 input:checked + .slider {
-    /* background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
+   
 }
 
 input:focus + .slider {
@@ -154,105 +152,99 @@ input:checked + .slider:before {
     margin-bottom: 20px;
 }
 main{
-    padding-bottom: 120px;
+    padding-bottom: 120px; /* Adding some space in the main content area*/
 }
 /* Hero Section Specific styles */
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
+    display: flex; /* Flex container for hero section */
+    align-items: center; /* Aligning items vertically */
+    justify-content: center; /* Aligning items horizontally */
+    margin-top: 100px; /* Adding top margin */
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    max-width: 88%;
-    margin: 0 auto;
-    padding: 0 20px;
+    display: flex; /* Flex container for content */
+    flex-direction: column; /* Stacking content vertically */
+    max-width: 88%; /* Setting maximum width */
+    margin: 0 auto; /* Centering horizontally */
+    padding: 0 20px; /* Adding padding */
 }
 
 .content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex; /* Flex container for content */
+    align-items: center; /* Aligning items vertically */
+    justify-content: space-between; /* Spacing items */
 }
 
 .image {
-    flex: 1;
-    max-width: 100%;
-    margin-right: 20px;
+    flex: 1; /* Taking remaining space */
+    max-width: 100%; /* Setting maximum width */
+    margin-right: 20px; /* Adding right margin */
 }
 
 .image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 100%;
+    width: 100%; /* Setting image width */
+    height: auto; /* Setting image height */
+    display: block; /* Displaying as block */
+    border-radius: 100%; /* Making image circular */
 }
 
-
+/* Footer styles */
 .footer{
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-    padding: 5px;
-    border: 2px solid black ;
-    height: 120px;
-    background-color: white;
-    width: 100%;
+    position: fixed; /* Fixed positioning */
+    bottom: 0; /* Positioning at the bottom */
+    text-align: center; /* Aligning text center */
+    padding: 5px; /* Adding padding */
+    border: 2px solid black ; /* Setting border */
+    height: 120px; /* Setting height */
+    background-color: white; /* Setting background color */
+    width: 100%; /* Taking full width */
 }
 
 .footer a{
-    text-align: left;
-    margin-top: 5px;
-    display: block;
-    text-decoration: none;
-    color: black;
+    text-align: left; /* Aligning text to the left */
+    margin-top: 5px; /* Adding top margin */
+    display: block; /* Displaying as block */
+    text-decoration: none; /* Removing underline */
+    color: black; /* Setting text color */
 }
+
+/* Dark mode footer styles */
 .dark .footer{
-    color: white;
-    background-color: black;
-    border-color: white;
+    color: white; /* Setting text color for dark mode */
+    background-color: black; /* Setting background color for dark mode */
+    border-color: white; /* Setting border color for dark mode */
 }
+
 .dark .footer a{
-    color: white;
+    color: white; /* Setting text color for dark mode */
 }
 
-
-
+/* Media query for smaller screens */
 @media (max-width: 768px) {
     *{
         transition: all 0.3s ease; /* Add transition for smoother resizing */
     }
     header{
-        background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0);
+        background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0); /* Gradient background for header */
     }
     .hero {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 30px;
+        margin-top: 30px; /* Adjusting top margin for hero section */
     }
 
     .container {
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-        margin: 0 auto;
+        max-width: 100%; /* Setting maximum width for container */
+        margin: 0 auto; /* Centering horizontally */
     }
 
     .content {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Stacking content vertically */
+        text-align: center; /* Aligning text center */
     }
 
     .image {
-        max-width: 90%;
-        align-self: center;
-        margin-right: 0;
+        max-width: 90%; /* Setting maximum width for image */
+        align-self: center; /* Aligning image to the center */
+        margin-right: 0; /* Removing right margin */
     }
 }
-
-
-

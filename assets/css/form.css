@@ -1,92 +1,102 @@
+/* Styles for a form */
 .form {
-    flex: 1;
-    width: 100%;
-    max-width: 50%;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    transition: all 0.3s ease; /* Add transition for smoother resizing */
-    margin-bottom: 20px; /* Add margin at the bottom to prevent cut-off */
-    margin-right: 20px; /* Add margin at the right to separate from the image */
+    flex: 1; /* Allowing the form to grow or shrink as needed */
+    width: 100%; 
+    max-width: 50%; /* Setting the maximum width of the form to 50% */
+    background-color: #fff; 
+    padding: 20px; /* Adding 20 pixels of padding inside the form */
+    border-radius: 8px; 
+    transition: all 0.3s ease; /* Adding transition for smoother resizing */
+    margin-bottom: 20px; /* Adding a bottom margin of 20 pixels */
+    margin-right: 20px; /* Adding a right margin of 20 pixels */
 }
 
-.form:hover{
-    background-color: red;
-    cursor: pointer;
-    background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0);
-    transition: background 2s ease-in, opacity 2s ease-out; /* Added a smooth transition for background and opacity, same as in style.css */
-    opacity: 0.5;
+/* Styles for the form when hovered */
+.form:hover {
+    background-color: red; /* Changing the background color to red when hovered */
+    cursor: pointer; /* Changing the cursor to a pointer when hovered */
+    background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0); /* Adding a linear gradient background */
+    transition: background 2s ease-in, opacity 2s ease-out; /* Adding a smooth transition for background and opacity */
+    opacity: 0.5; /* Changing the opacity to 0.5 when hovered */
 }
 
+/* Styles for h2 elements inside the form */
 .form h2 {
-    margin-bottom: 20px;
-    font-size: 26px;
-    text-align: center;
-    font-weight: bolder;
-    color: darkslategray;
+    margin-bottom: 20px; 
+    font-size: 26px; 
+    text-align: center; /* Aligning the text to the center */
+    font-weight: bolder; /* Setting the font weight to bolder */
+    color: darkslategray; /* Setting the text color to darkslategray */
 }
 
+/* Styles for input fields, textarea, and button inside the form */
 .form input[type="text"],
 .form input[type="text"],
 .form textarea,
 .form button {
-    width: calc(100% - 20px); /* Adjusted width to accommodate padding */
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 8px;
-    justify-content: center;
+    width: calc(100% - 20px); /* Adjusting the width to accommodate padding */
+    padding: 10px; /* Adding 10 pixels of padding */
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; /* Including padding and border in the element's total width and height */
+    margin-top: 8px; 
+    justify-content: center; /* Centering the content horizontally */
 }
 
+/* Styles for the button inside the form */
 .form button {
-    width: calc(100% - 20px); /* Adjusted width to accommodate padding */
-    background-color: darkslategray;
-    color: #fff;
-    font-weight: bolder;
-    font-size: 22px;
-    border: none;
-    cursor: pointer;
+    width: calc(100% - 20px); /* Adjusting the width to accommodate padding */
+    background-color: darkslategray; 
+    color: #fff; /* Setting the text color to white */
+    font-weight: bolder; /* Setting the font weight to bolder */
+    font-size: 22px; 
+    border: none; /* Removing the border */
+    cursor: pointer; /* Changing the cursor to a pointer */
 }
 
+/* Styles for the button when hovered */
 .form button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Changing the background color to #0056b3 when hovered */
 }
 
-/* On screens that are 992px or less, adjust form padding */
+/* Media query for screens with a maximum width of 992 pixels */
 @media screen and (max-width: 992px) {
     .form {
-        max-width: 98%;
-        padding: 32px;
-        margin-right: 0;
-        margin-top: 10px;
-        background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0);
+        max-width: 98%; /* Adjusting the maximum width to 98% */
+        padding: 32px; 
+        margin-right: 0; 
+        margin-top: 10px; /* Adding a top margin of 10 pixels */
+        background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0); /* Adding a linear gradient background */
     }
 }
 
-/* On screens that are 600px or less, adjust form padding and width */
+/* Media query for screens with a maximum width of 600 pixels */
 @media screen and (max-width: 600px) {
     .form {
-        max-width: 100%;
-        padding: 10px;
-        margin-right: 0;
-        margin-top: 30px;
-        background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0);
-    }
-    .form h2{
-        font-size: 20px;
+        max-width: 100%; /* Adjusting the maximum width to 100% */
+        padding: 10px; /* Adding 10 pixels of padding */
+        margin-right: 0; /* Removing the right margin */
+        margin-top: 30px; /* Adding a top margin of 30 pixels */
+        background: linear-gradient(to right, #14ffe9, #ffeb3b, #ff00e0); /* Adding a linear gradient background */
     }
 
+    /* Styles for h2 elements inside the form for smaller screens */
+    .form h2 {
+        font-size: 20px; /* Setting the font size to 20 pixels */
+    }
+
+    /* Styles for input fields, textarea, and button inside the form for smaller screens */
     .form input[type="text"],
     .form input[type="text"],
     .form textarea,
     .form button {
-        width: calc(100% - 16px); /* Adjusted width to accommodate padding */
-        margin-top: 5px;
-        align-self: center;
+        width: calc(100% - 16px); /* Adjusting the width to accommodate padding */
+        margin-top: 5px; 
+        align-self: center; /* Aligning the element vertically */
     }
 
+    /* Styles for the button inside the form for smaller screens */
     .form button {
-        width: calc(100% - 16px); /* Adjusted width to accommodate padding */
+        width: calc(100% - 16px); /* Adjusting the width to accommodate padding */
     }
 }
