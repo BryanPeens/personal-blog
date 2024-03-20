@@ -193,11 +193,14 @@ main{
 
 
 .footer{
+    position: fixed;
+    bottom: 0;
     text-align: center;
     padding: 5px;
     border: 2px solid black ;
     height: 120px;
     background-color: white;
+    width: 100%;
 }
 
 .footer a{
