@@ -1,7 +1,6 @@
-const username = document.querySelector('#username');
-const title = document.querySelector('#title');
-const content = document.querySelector('#content');
 const backButton = document.querySelector('#back');
+
+const posts = document.querySelector('#posts');
 
 function createObject(){
   // Check if "postArray" exists in localStorage
@@ -10,12 +9,28 @@ function createObject(){
     let blogPostArray = JSON.parse(localStorage.getItem("postArray"));
 
     // Assuming there's only one blog post in the array
-    let blogPostObject = blogPostArray[0];
+    blogPostArray.forEach((element, index) => {
 
-    // Populate the elements with retrieved data
-    username.textContent = "Created By: " + blogPostObject.username;
-    title.textContent = blogPostObject.title;
-    content.textContent =blogPostObject.content;
+      const section = document.createElement('section');
+      section.setAttribute('id',`blog-container-${index}`);
+      section.setAttribute('class',`post-container`);
+      const h2 = document.createElement('h2');
+      h2.setAttribute('id',`title-${index}`);
+      const p = document.createElement('p');
+      p.setAttribute('id',`content-${index}`);
+      const h4 = document.createElement('h4');
+      h4.setAttribute('id',`username-${index}`);
+
+      section.appendChild(h2);
+      section.appendChild(p);
+      section.appendChild(h4);
+
+      h2.textContent = element.title;
+      p.textContent = element.content;
+      h4.textContent = "Created by: " + element.username;
+  
+      posts.appendChild(section);
+    });
   }
 }
 

@@ -10,6 +10,19 @@ body {
     font-family: Arial, sans-serif; /* Setting a fallback font */
     background-color: #f0f0f0; /* Setting a light background color */
 }
+.dark{
+    background-color: black;
+    color: white;
+}
+.dark #line-div{
+    border-color: white;
+}
+.dark #posts section{
+    border-color: white;
+}
+.dark #posts section h2{
+    border-color: white;
+}
 
 header {
     position: sticky;
@@ -176,6 +189,32 @@ input:checked + .slider:before {
     border-radius: 100%;
 }
 
+
+.footer{
+    /* position: sticky;
+    bottom: 0; */
+    text-align: center;
+    margin-top: 180px;
+    padding: 20px;
+    border-top:2px solid black ;
+}
+
+.footer a{
+    text-align: left;
+    margin-top: 5px;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.dark .footer{
+    color: white;
+}
+.dark .footer a{
+    color: white;
+}
+
+
+
 @media (max-width: 768px) {
     *{
         transition: all 0.3s ease; /* Add transition for smoother resizing */
@@ -208,3 +247,6 @@ input:checked + .slider:before {
         margin-right: 0;
     }
 }
+
+
+

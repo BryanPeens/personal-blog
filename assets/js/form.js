@@ -7,8 +7,7 @@ submitButton.addEventListener('click', function (event) {
   // Prevent the default form submission behavior
   event.preventDefault();
 
-  let blogposts = [] // Initialize new array for post object
-
+  let blogposts = JSON.parse(localStorage.getItem('postArray')) || [] ; // Initialize new array for post object
   // Trim the values and check if they are not empty
   let username = usernameInput.value.trim();
   let title = titleInput.value.trim();
@@ -26,11 +25,11 @@ submitButton.addEventListener('click', function (event) {
     title: title,
     content: content
   };
+
   blogposts.push(blogPostObject); // Add the blog object to the array
   // Convert the object to JSON and store it in local storage
   localStorage.setItem('postArray', JSON.stringify(blogposts));
 
-  console.log(localStorage);
 
   location.href = "blog.html";
 
