@@ -212,6 +212,8 @@ main{
 }
 .dark .footer{
     color: white;
+    background-color: black;
+    border-color: white;
 }
 .dark .footer a{
     color: white;
